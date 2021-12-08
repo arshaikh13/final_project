@@ -1,0 +1,451 @@
+*{
+    margin: 0;
+}
+
+nav{
+    height: 60px;
+    width: 100%;
+    background-color:#181818;
+    position: fixed;
+    z-index: 99;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.menuIcon{
+    height: 100%;
+    width: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content:space-evenly;
+    align-items: center;
+    position: absolute;
+    right: 0;
+    cursor: pointer;
+}
+
+.bar{
+    height: 6px;
+    width: 80%;
+    background-color: white;
+    border-radius: 6px;
+}
+
+.menu{
+    position: fixed;
+    top: 60px;
+    right: -150px;
+    width: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    color: white;
+    background-color: black;
+    min-height: 150px;
+    transition: 0.125s;
+    z-index: 99;
+    border-start-start-radius: 8px;
+    border-bottom-left-radius: 8px;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+    font-family: Calibri;
+}
+
+.link{
+    color: transparent;
+}
+
+
+@media screen and (min-width: 600px) {
+
+    .bar,.menu{
+        display: none;
+    }
+
+    .menuIcon{
+        pointer-events: none;
+    }
+
+    a{
+        text-decoration: none;
+        margin: 25px;
+        font-family: Calibri;
+    }
+
+    .link{
+        text-decoration: none;
+        color: white;
+        margin: 25px;
+        font-family: Calibri;
+        position: relative;
+        top: 15px;
+        cursor: pointer;
+    }
+
+    .link:hover{
+        text-decoration: underline;
+    }
+
+}
+
+img{
+    height: 60px;
+    width: 60px;
+}
+
+
+.splash{
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://wallpaperaccess.com/full/2827069.jpg');
+    background-size: cover;
+    width: 100%;
+    height: 400px;
+    position: relative;
+    top: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.splashtext{
+    filter: brightness(200%);
+    color: white;
+    font-size: 60px;
+    font-family: "Calibri";
+    word-spacing: 10px;
+    letter-spacing: 10px;
+    border: solid white 6px;
+}
+
+.wrapper1{
+    position: relative;
+    top: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.plot{
+    background-color:teal;
+    width: 90%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 40px;
+    border: solid black 3px;
+}
+
+.plotsub{
+    font-family: Calibri;
+    letter-spacing: 3px;
+    font-size: 25px;
+    text-decoration: underline;
+    margin-bottom: 15px;
+}
+
+.syn{
+    font-size: 17px;
+    font-family: Calibri;
+    line-height: 130%;
+}
+
+
+@media screen and (max-width: 600px) {
+    .b1{
+        height: 1600px;
+    }
+
+    .wholewrap{
+        height: 3300px;
+    }
+
+}
+
+.wrapper2{
+    background-color: white;
+    position: relative;
+    top:60px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 20px
+}
+
+.minfo {
+    height: 250px;
+    width: 375px;
+    background-color: teal;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: space-evenly;
+    border: solid black 3px;
+    border-radius: 30px;
+    margin: 10px;
+    box-shadow: 8px 8px 8px 8px rgba(0,0,0,0.18);
+}
+
+
+.linfo{
+    color: black;
+    font-family: Calibri;
+    margin-left: 10%;
+    font-size: 18px;
+}
+
+.mitext{
+    color: black;
+    font-family: Calibri;
+    margin-left: 35%;
+    text-decoration: underline;
+}
+
+
+.mtext{
+    color: black;
+    font-family: Calibri;
+    margin-left: 35%;
+    text-decoration: underline;
+}
+
+.cwrapper1{
+    display: flex;
+    justify-content: center;
+}
+
+.csub{
+    background-color: #1e90ff;
+    color: black;
+    box-shadow: 8px 8px 8px 8px rgba(0,0,0,0.18);
+    position: absolute;
+    top: 0px;
+    height: 150px;
+    width: 150px;
+    padding: 10px;
+    border-radius: 99%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.csubsub{
+    font-size: 25px;
+    font-family: Calibri;
+    text-decoration: underline;
+    letter-spacing: 2px;
+}
+
+.cwrapper2{
+    position: relative;
+    top:225px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.char{
+    height: 450px;
+    width: 425px;
+    border-radius:15px;
+    background-color:#1e90ff;
+    margin: 20px;
+    box-shadow: 8px 8px 8px 8px rgba(0,0,0,0.18);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:center;
+    padding: 10px;
+
+}
+
+.cwrapper3{
+    position: relative;
+    top:265px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.tan,.nez,.ino,.zen,.giyu,.muz{
+    height: 200px;
+    width: 200px;
+    margin: 8px;
+}
+
+
+.tand,.nezd,.inod,.zend,.giyud,.muzd{
+    font-family: Calibri;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+
+.infowrap{
+    position: relative;
+    top: 230px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 40px;
+
+}
+
+.infocon{
+    height: 270px;
+    width: 370px;
+    background-color: #1e90ff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    box-shadow: 8px 8px 8px 8px rgba(0,0,0,0.18);
+    border-radius: 30px;
+    border: solid black 3px;
+}
+
+.infosubtxt1{
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.infotxt{
+    font-family: Calibri;
+    color: black;
+    font-size: 35px;
+    text-decoration: underline;
+    margin: 2px;
+}
+
+.infotxt2{
+    font-family: Calibri;
+    color: black;
+    font-size: 35px;
+    text-decoration: underline;
+    margin: 2px;
+}
+
+.infopng{
+    height: 135px;
+    width:190px;
+    border-radius: 20%;
+}
+
+.infosubtxt{
+    font-family: Calibri;
+    color: black;
+    font-size: 20px;
+}
+
+
+.foothome{
+    background-color: #181818;
+    position: relative;
+    bottom: -70px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.footchar{
+    background-color: #181818;
+    position: relative;
+    bottom: -270px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+
+}
+
+.footinfo{
+    background-color: #181818;
+    position: relative;
+    bottom: -311px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.footaddress,.footsocial,.foottitle{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: 10px;
+}
+
+.footsubtxt{
+    color: white;
+    font-family: Papyrus;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.foottxt2{
+    position: relative;
+    top: 10px;
+    color: white;
+    font-family: Papyrus;
+    font-weight: bold;
+}
+
+.foottxt{
+    color: white;
+    font-family: Papyrus;
+    font-weight: bold;
+    font-size: 48px;
+}
+
+
+.finaltxt{
+    color: white;
+    font-family: Papyrus;
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.footpng{
+    height: 160px;
+    width: 230px;
+    border-radius: 20%;
+    border: solid white 1px;
+    margin-top: 15px;
+}
+
+.infotitle{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+
+}
+
+.finalnote{
+    width: 45%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: 10px;
+}
